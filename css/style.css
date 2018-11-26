@@ -17,21 +17,26 @@ body {
 }
 
 header {
-	background-image: url(../img/bg.jpg);
+	background-color:#000;
+	/* background-image: url(../img/bg.jpg);
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size: cover; */
 }
 
 h1 {
+	font-family: 'Parisienne', serif, sans-serif;
+	font-weight: 100;
 	font-size:3.6rem;
 	text-align: center;
 	color:#fff;
 }
 
 h2 {
+	font-family: 'Parisienne', serif, sans-serif;
+	font-weight: 300;
 	background-color: #000;
 	color:#fff;
-	font-size:2.4rem;
+	font-size:2.6rem;
 	text-align: center;
 	padding:15px 0px;
 	margin-bottom:20px;
@@ -75,6 +80,11 @@ section {
 	margin-bottom: 40px;
 }
 
+.icons {
+	color:#000;
+	padding-left:10px;
+}
+
 
 @media(min-width: 590px) {
 	h1 {
@@ -96,6 +106,7 @@ section {
 	.basic-info {
 		display: flex;
 		flex-flow: row wrap;
+		justify-content: space-around;
 	}
 
 	h1 {
@@ -104,8 +115,25 @@ section {
 }
 
 @media(min-width: 960px) {
+	h1 {
+		font-size:7.5rem;
+	}
 	.container {
-		width:70%;
+		width:90%;
 		margin: auto;
 	}
 }
+
+/*
+Parisienne
+Playball
+Tangerine
+Poiret One
+Courgette
+Cinzel
+Cormorant Upright
+Aref Ruqaa
+Dancing Script
+Lobster
+Noto Serif
+*/
