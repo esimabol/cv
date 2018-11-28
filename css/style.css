@@ -16,13 +16,6 @@ body {
 	background-color: #fff;
 }
 
-header {
-	background-color:#000;
-	/* background-image: url(../img/bg.jpg);
-	background-repeat: no-repeat;
-	background-size: cover; */
-}
-
 h1 {
 	font-family: 'Parisienne', serif, sans-serif;
 	font-weight: 100;
@@ -48,12 +41,6 @@ nav ul{
 	margin: auto;
 }
 
-.basic-info li {
-	text-align: center;
-	padding: 30px 0px;
-	font-size: 1.5rem;
-}
-
 article p {
 	margin-bottom: 10px;
 }
@@ -68,6 +55,26 @@ footer .container {
 	text-align: center;
 	font-size:0.7rem;
 }
+
+a {
+	text-decoration: none;
+	color:#000;
+}
+
+.jumbotron {
+	background-color:#000;
+	background-image: url(../img/bg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+
+.basic-info li {
+	text-align: center;
+	padding: 30px 0px;
+	font-size: 1.5rem;
+}
+
 .cv-name {
 	font-weight: bold;
 	border:none;
@@ -75,16 +82,19 @@ footer .container {
 
 .bold {
 	font-weight: bold;
+	margin-bottom:10px;
 }
 
 .details-container {
 	display: flex;
-	flex-flow: row wrap;
+	flex-flow: column wrap;
 	justify-content: space-between;
 	margin-bottom: 20px;
 }
 
-
+.icons {
+	font-weight: 600;
+}
 
 @media(min-width: 590px) {
 	h1 {
@@ -104,11 +114,22 @@ footer .container {
 		display: flex;
 		flex-flow: row nowrap;
 		justify-content: space-around;
+
 	}
 
 	h1 {
 		font-size:6rem;
 	}
+
+	.jumbotron {
+		height:600px;
+	}
+
+	.jumbotron h1 {
+	position: relative;
+	top: 180px;
+}
+
 }
 
 @media(min-width: 960px) {
@@ -118,6 +139,16 @@ footer .container {
 	.container {
 		width:90%;
 		margin: auto;
+	}
+
+	.details-container {
+		flex-flow: row wrap;
+	}
+
+	
+	.basic-info li {
+		padding-right: 15px;
+		border-right:1px solid #666;
 	}
 }
 
