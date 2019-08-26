@@ -35,6 +35,9 @@ h2 {
 	margin-bottom:20px;
 }
 
+nav {
+	padding-top: 30px;
+}
 
 nav ul{
 	list-style-type: none;
@@ -51,8 +54,7 @@ article p {
 
 
 section {
-	padding-top: 40px;
-	padding-bottom: 50px;
+	padding:45px 5px;
 }
 
 footer .container {
@@ -67,7 +69,7 @@ a {
 
 .jumbotron {
 	background-color:#000;
-	background-image: url(../img/bg.jpg);
+	background-image: url(../img/jumbotron.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center center;
@@ -138,7 +140,11 @@ a {
 
 	.basic-info li {
 		padding-right: 15px;
-		border-right:1px solid #666;
+		border-right:1px solid #ddd;
+	}
+
+	.basic-info li:last-child {
+		border-right: none;
 	}
 
 }
